@@ -3,6 +3,12 @@ clc;clear all; close all;
 filep = mfilename('fullpath');
 [pathstr,namestr]=fileparts(filep);
 currentFolder = pathstr;
+% if filep(1,end-4) == '\'
+%     nextFolder = '\foreman20_40_RGB\';
+% else
+%     nextFolder = '/foreman20_40_RGB/';
+% end
+% fileDir = [currentFolder, nextFolder];
 nextFolder = 'foreman20_40_RGB';
 fileDir = fullfile(currentFolder, nextFolder, filesep);
 filePattern = [fileDir,'*.bmp'];
