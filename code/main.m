@@ -299,12 +299,6 @@ for scaleIdx = 1 : numel(scales)
 end
 
 
-
-
-
-
-
-
 %% Plot 
 figure(1);
 title('D-R curve')
